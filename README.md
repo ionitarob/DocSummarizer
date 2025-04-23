@@ -76,59 +76,13 @@ DocSummarizer-Student/
 
 ---
 
-## Next Steps / MVP
+## Next Steps
 
 1. **Extraction Module**: Implement PDF and DOCX readers.
 2. **Basic Summarizer**: Integrate T5-small to generate simple summaries.
 3. **Minimal CLI**: Process a document and output the summary to the console.
 4. **Exporters**: Create a PPTX with one slide per key section.
 5. **Web Interface**: Enable file uploads and result downloads.
-
----
-
-## Project Roadmap
-
-To guide development and your learning, the project is divided into these phases:
-
-### Phase 0: Environment Setup
-- Choose the programming language: **Python**.
-- Set up a virtual environment (`venv`) and manage dependencies with `requirements.txt`.
-- Initialize the repository structure (`src/`, `input/`, `output/`, `docs/`).
-
-### Phase 1: Text Extraction
-- Implement PDF extraction with `pdfplumber` or `PyMuPDF`.
-- Implement DOCX extraction with `python-docx`.
-- Validate extraction on sample documents.
-
-### Phase 2: Preprocessing
-- Clean text: remove extra whitespace, special characters, and normalize.
-- Tokenize and segment into headings, subheadings, and paragraphs using **spaCy** or **NLTK**.
-- Create reusable functions for structuring content.
-
-### Phase 3: Summarization
-- Integrate a Hugging Face model (e.g., **T5-small** or quantized **PEGASUS**).
-- Build an inference pipeline handling input lengths, batching, and memory limits.
-- Evaluate summary quality against manual extracts.
-
-### Phase 4: Exporters
-- Generate **DOCX** files with structured notes using **python-docx**.
-- Generate **PPTX** slides for each key section using **python-pptx**.
-- Ensure consistent formatting and styling.
-
-### Phase 5: User Interface
-- Develop a user-friendly **CLI** with `argparse` or `click`.
-- Build a **Web UI** with **Streamlit** or **Gradio**.
-- Coordinate module calls for extraction, preprocessing, summarization, and exporting.
-
-### Phase 6: Testing and CI/CD
-- Write unit and integration tests for each component.
-- Configure **GitHub Actions** for linting, testing, and building.
-- Optionally deploy a demo on Streamlit Community Cloud or Heroku.
-
-### Phase 7: Documentation and Examples
-- Add usage examples in `docs/` with screenshots.
-- Document the internal API and CLI commands in `README.md`.
-- Provide a `CONTRIBUTING.md` guide and roadmap for future collaborators.
 
 ---
 
@@ -139,4 +93,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contributing
 
 Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project.
+
+
 
